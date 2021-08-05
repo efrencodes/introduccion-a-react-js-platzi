@@ -7,11 +7,11 @@
   "scripts": {
     "start": "webpack server --mode development",
     "build": "webpack --mode production",
-    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "format": "prettier --write '{*.js,*scss,src/**/*.{js,jsx,scss}}'",
     "lint": "eslint src/ --fix",
     "test": "npm run lint"
   },
-  "bugs": "https://github.com/efrenmartinez/react-base/issues",
+  "bugs": "https://github.com/efrenmartinez/react-js-base/issues",
   "keywords": [
     "react",
     "base",
