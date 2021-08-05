@@ -39,7 +39,7 @@ Para poder clonar y correr el proyecto, necesitas **GIT**  y **NodeJS** instalad
 
 ```bash
   # Clonar el repositorio.
-  $ git clone https://github.com/efrenmartinez/react-base.git
+  $ git clone https://github.com/efrenmartinez/react-js-base.git
 
   # Ir a la carpeta.
   $ cd react-base
