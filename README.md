@@ -1,4 +1,4 @@
-![](https://res.cloudinary.com/efrenmartinez/image/upload/v1628112149/covers-github/react-js-base_laoswv.png)
+![](https://github.com/efrenmartinez/react-js-base/blob/master/covers/react-js-base.png)
 
 ### 🎯 Used technologies:
   * ReactJS
@@ -33,20 +33,54 @@
   * eslint-plugin-prettier
   * eslint-config-prettier
 
-### ⚙️ Run the project
+### ⚙️ How To Use
 
-Para poder clonar y correr el proyecto, necesitas **GIT**  y **NodeJS** instalada en tu computadora.
+To clone and run this application, you'll need **GIT** and **NodeJS** (which comes with npm) installed on your computer. From your command line:
 
 ```bash
-  # Clonar el repositorio.
+  # Clone this repository
   $ git clone https://github.com/efrenmartinez/react-js-base.git
 
-  # Ir a la carpeta.
-  $ cd react-base
+  # Go into the repository
+  $ cd react-js-base
 
-  # Instalar dependencias con npm
+  # Install dependencies
   $ npm install
 
-  # Correr el proyecto
+  # Run the app
   $ npm run start
+
+  # Open in browser
+  # http://localhost:3005/
+```
+
+### 🎨 Format code with Prettier
+
+```bash
+  # Format code
+  $ npm run format
+
+  # output
+  > react-js-base@1.0.0 format /home/react-js-base
+  > prettier --write '{*.js,*scss,src/**/*.{js,jsx,scss}}'
+
+  src/assets/styles/App.scss 29ms
+  src/components/App.jsx 26ms
+  src/components/HelloWorld.jsx 8ms
+  src/index.js 5ms
+  webpack.config.js 12ms
+```
+
+### 🚩 Lint project
+
+```bash
+  # Lint
+  $ npm run lint
+```
+
+### 🚀 Deployment
+To deploy this project run
+```bash
+  # Build
+  $ npm run build
 ```

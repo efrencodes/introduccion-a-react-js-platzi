@@ -1,8 +1,8 @@
 {
-  "name": "react-base",
+  "name": "react-js-base",
   "author": "efrenmartinez <developer.emartinez@gmail.com> (https://efrenmartinez.dev/)",
   "version": "1.0.0",
-  "description": "React Base",
+  "description": "React Base | Minimal project in ReactJS + Babel + Webpack",
   "main": "index.js",
   "scripts": {
     "start": "webpack server --mode development",
