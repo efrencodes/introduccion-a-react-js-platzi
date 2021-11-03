@@ -5,36 +5,17 @@ import TodoList from '../TodoList'
 import TodoItem from '../TodoItem'
 import CreateTodoButton from '../CreateTodoButton'
 
+import useLocalStorage from '../../customHooks/useLocalStorage'
+
 const App = () => {
-	const LocalTodoList = localStorage.getItem('TODOLIST')
-	let parsedTodoList
-
-	if (!LocalTodoList) {
-		localStorage.setItem(
-			'TODOLIST',
-			JSON.stringify([
-				{ text: 'Curso de php', completed: false },
-				{ text: 'Curso de JavaScript', completed: true },
-				{ text: 'Curso de Typescript', completed: false },
-				{ text: 'Curso de Github', completed: true }
-			])
-		)
-		parsedTodoList = []
-	} else {
-		parsedTodoList = JSON.parse(LocalTodoList)
-	}
-
-	const [todos, setTodos] = useState(parsedTodoList)
+	const [todos, saveTodos] = useLocalStorage(
+		'TODOLIST',
+		JSON.stringify([{ text: 'Curso de php', completed: false }])
+	)
 	const [search, setSearch] = useState('')
 
 	const totalTodo = todos.length
 	const completedTodo = todos.filter((todo) => !!todo.completed).length
-
-	const saveTodos = (newTodos) => {
-		// JSON.stringify convierte un json a string.
-		localStorage.setItem('TODOLIST', JSON.stringify(newTodos))
-		setTodos(newTodos)
-	}
 
 	const onCompletedItem = (text) => {
 		const index = todos.findIndex((todo) => todo.text === text)
