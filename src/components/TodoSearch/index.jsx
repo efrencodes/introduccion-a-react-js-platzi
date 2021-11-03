@@ -5,7 +5,11 @@ const TodoSearch = ({ search, setSearch }) => {
 		setSearch(event.target.value)
 	}
 	return (
-		<input placeholder="Add list" value={search} onChange={onChangeValue} />
+		<input
+			placeholder="Escribe una tarea"
+			value={search}
+			onChange={onChangeValue}
+		/>
 	)
 }
 

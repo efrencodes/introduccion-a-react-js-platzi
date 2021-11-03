@@ -1,10 +1,9 @@
 import React from 'react'
 
-const CreateTodoButton = () => {
-	const onClickTodo = (msg) => console.log(msg)
+const CreateTodoButton = ({ onNewItem }) => {
 	return (
-		<button type="button" onClick={() => onClickTodo('hola')}>
-			Add tarea
+		<button type="button" onClick={onNewItem}>
+			Agregar nueva tarea
 		</button>
 	)
 }
