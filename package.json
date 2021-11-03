@@ -1,59 +1,59 @@
 {
-  "name": "react-js-base",
-  "author": "efrenmartinez <developer.emartinez@gmail.com> (https://efrenmartinez.dev/)",
-  "version": "1.0.0",
-  "description": "React Base | Minimal project in ReactJS + Babel + Webpack",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack server --mode development",
-    "build": "webpack --mode production",
-    "format": "prettier --write '{*.js,*scss,src/**/*.{js,jsx,scss}}'",
-    "lint": "eslint src/ --fix",
-    "test": "npm run lint"
-  },
-  "bugs": "https://github.com/efrenmartinez/react-js-base/issues",
-  "keywords": [
-    "react",
-    "base",
-    "babel",
-    "sass",
-    "jsx"
-  ],
-  "license": "ISC",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.2",
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.9",
-    "@babel/preset-react": "^7.14.5",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^6.2.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "file-loader": "^6.2.0",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.3.2",
-    "husky": "^7.0.1",
-    "mini-css-extract-plugin": "^2.2.0",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.1.0",
-    "webpack": "^5.48.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test",
-      "pre-push": "npm run test"
-    }
-  }
+	"name": "curso-de-introduccion-de-reactjs",
+	"author": "efrencodes <efrencodes@gmail.com> (https://www.efrencodes.com/)",
+	"version": "1.0.0",
+	"description": "React Base | Minimal project in ReactJS + Babel + Webpack",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "webpack server --mode development",
+		"build": "webpack --mode production",
+		"format": "prettier --write '{*.js,*scss,src/**/*.{js,jsx,scss}}'",
+		"lint": "eslint src/ --fix",
+		"test": "npm run lint"
+	},
+	"bugs": "https://github.com/efrencodes/react-js-base/issues",
+	"keywords": [
+		"react",
+		"base",
+		"babel",
+		"sass",
+		"jsx"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"prettier": "^2.3.2",
+		"@babel/core": "^7.14.8",
+		"@babel/preset-env": "^7.14.9",
+		"@babel/preset-react": "^7.14.5",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.2.2",
+		"css-loader": "^6.2.0",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.24.0",
+		"file-loader": "^6.2.0",
+		"html-loader": "^2.1.2",
+		"html-webpack-plugin": "^5.3.2",
+		"husky": "^7.0.1",
+		"mini-css-extract-plugin": "^2.2.0",
+		"node-sass": "^6.0.1",
+		"sass-loader": "^12.1.0",
+		"webpack": "^5.48.0",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run test",
+			"pre-push": "npm run test"
+		}
+	}
 }
