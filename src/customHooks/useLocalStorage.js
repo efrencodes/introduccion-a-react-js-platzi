@@ -38,7 +38,7 @@ const useLocalStorage = (itemName, itemValue) => {
 	}
 
 	return {
-		value,
+		todos: value,
 		saveTodos,
 		loading,
 		error
